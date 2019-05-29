@@ -97,6 +97,15 @@ body {
 
 .trabalhos {
     background-color: #3C1D3D;
+    background-image: linear-gradient(to bottom right,
+        transparent,
+        transparent 14px,
+        rgba(0, 0, 0, 0.1) 14px,
+        rgba(0, 0, 0, 0.1) 15px,
+        transparent 15px,
+        transparent);
+    background-attachment: fixed;
+    background-size: 20px 20px;
     border-top: .5em solid #000;
     border-bottom: .5em solid #000;
 }
@@ -117,6 +126,15 @@ body {
 }
 .blog {
     background-color: #999;
+    background-image: linear-gradient(to bottom right,
+        transparent,
+        transparent 14px,
+        rgba(255, 255, 255, 0.1) 14px,
+        rgba(255, 255, 255, 0.1) 15px,
+        transparent 15px,
+        transparent);
+    background-size: 20px 20px;
+    background-attachment: fixed;
     position: relative;
     color: #FFF;
     border-bottom: .5em solid #851944;
