@@ -33,6 +33,10 @@ h1 {
 main a {
     color: #851944;
 }
+main a:focus,
+main a:hover {
+    color: red;
+}
 
 main p {
     text-align: justify;
@@ -50,6 +54,10 @@ main p {
     color: inherit;
     font-family: "Open Sans Condensed", "Arial", sans-serif;
     text-transform: lowercase;
+}
+.navegacao-site a:focus,
+.navegacao-site a:hover {
+    text-shadow: 0 0 2px pink;
 }
 
 .navegacao-site h1 {
@@ -98,6 +106,12 @@ em {
     height: 40px;
     display: block;
     text-indent: -99999px;
+}
+
+.icones-redes-sociais a:hover,
+.icones-redes-sociais a:focus {
+    border-radius: 50%;
+    box-shadow: 0 0 .5em #851944, inset 0 0 .5em #851944;
 }
 
 .github {
