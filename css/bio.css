@@ -5,6 +5,19 @@
     margin: 1em 2em;
     width: 30ch;
     box-sizing: border-box;
+    
+}
+
+.citacao-bio::before {
+    content:'“';
+    position: absolute;
+    color: #bbb;
+    font-size: 10em;
+    line-height: .8;
+}
+
+.citacao-bio > p {
+    position: relative;
 }
 
 .citacao-bio:nth-of-type(even){
@@ -26,4 +39,14 @@
 .citacao-bio:nth-of-type(odd):hover{
     transform: scale(1.2) rotate(5deg);
     box-shadow: 0px 0px 0px 9999px rgba(0, 0, 0, 0.75);
+}
+
+
+.container > p::first-letter{
+    font-size: 200%;
+    font-weight: bold;
+    color: #3C1D3D;
+    text-shadow: 1px 1px 0 #000;
+    margin-right: .2ch;
+    line-height: 1;
 }
