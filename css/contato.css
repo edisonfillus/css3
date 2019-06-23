@@ -18,8 +18,44 @@ textarea {
     border: 1px solid #ccc;
 }
 
+/* 1 Label por linha */
 label[for] {
     display: block;
+}
+
+/* Posição relativa para labels com ícone */
+label.com-icone {
+    position: relative;
+}
+
+/* Inclui imagem após label, logo abaixo, junto ao input */
+label.com-icone::after {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    content: '';
+    background-color: #8C1D3D;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1em;
+    width: 2em;
+    height: 2em;
+}
+
+/* Reduz o tamanho da input quando há label com ícone */
+label.com-icone + input {
+    position: relative;
+    left: 2em;
+    width: calc(100% - 2em);
+}
+
+
+label[for="nome"]::after{
+    background-image: url('../imagens/usuario.png');
+}
+
+label[for="email"]::after{
+    background-image: url('../imagens/email.png');
 }
 
 /* deixar só esse campo sem ocupar a tela toda */
@@ -40,9 +76,6 @@ textarea:focus {
 input:invalid {
     box-shadow: 0 0 3px red;
 }
-
-
-
 
 button {
     /* Precisamos tirar a borda que o navegador coloca por padrão */
