@@ -14,6 +14,7 @@ body {
     height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 .5em #000;
+   
 }
 .saudacao p {
     font-size: 1.5em;
@@ -40,7 +41,7 @@ body {
     transform: rotate(-5deg) skew(-10deg);
 }
 .banner-twitter{
-    position:absolute;   
+    position:absolute;  
     background-color: #3C1D3D;
     color: white;
     border: .25em solid black;
@@ -61,15 +62,16 @@ body {
     Na vertical: -1 * sen(45) * altura
     
 
-    Neste caso: font-size: 1em + padding: 2em + border: 0,5em  = 3,5em
+    Neste caso: font-size: 1em + padding: 2em + border: 0.5em  = 3.5em
 
-    cos(45) * (3,5em - 14em) + 14em = 6,5754em
-    -1 * sen(45) * 3,5em = -2,4749em
+    cos(45) * (3.5em - 14em) + 14em = 6.5754em
+    -1 * sen(45) * 3.5em = -2.4749em
     
-       
+    cos(45) = 0.707 
+    sen(45) = 0.707 
 
     */
-    transform: translate(6.5754em, -2.4749em) rotate(45deg);
+    transform: translate(calc(0.707 * (3.5em - 100%) + 100%), calc(-1 * 0.707 * 3.5em)) rotate(45deg);
     
 
 }
