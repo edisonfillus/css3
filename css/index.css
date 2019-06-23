@@ -14,7 +14,6 @@ body {
     height: 200px;
     border-radius: 50%;
     box-shadow: 0 0 .5em #000;
-   
 }
 .saudacao p {
     font-size: 1.5em;
@@ -72,9 +71,7 @@ body {
 
     */
     transform: translate(calc(0.707 * (3.5em - 100%) + 100%), calc(-1 * 0.707 * 3.5em)) rotate(45deg);
-    
-
-}
+ }
 .botao-index {
     font-size: 1.25em;
     background-color: #851944;
