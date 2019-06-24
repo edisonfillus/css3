@@ -49,7 +49,6 @@ label.com-icone + input {
     width: calc(100% - 2em);
 }
 
-
 label[for="nome"]::after{
     background-image: url('../imagens/usuario.png');
 }

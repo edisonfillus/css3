@@ -50,3 +50,37 @@
     margin-right: .2ch;
     line-height: 1;
 }
+
+.table-habilidades{
+    margin: 1em 0;
+    border-collapse: separate;
+    border-spacing: .25em;
+}
+
+.table-habilidades td, th{
+    padding: 1em;
+}
+
+.table-habilidades tbody th{
+    background-color: #851944;
+    color: white;
+    font-weight: bold;
+}
+.table-habilidades tbody td{
+    background-color:  #EEE;
+    color: inherit;
+}
+.table-habilidades thead th{
+    background-color: #3C1D3D;
+    color: white;
+    font-weight: bold;
+}
+
+.table-habilidades td[colspan],tr[colspan] {
+    text-align: center;
+    font-style: italic;
+}
+
+.table-habilidades td[colspan],tr[rowspan] {
+    vertical-align: middle;
+}
