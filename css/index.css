@@ -38,7 +38,22 @@ body {
     font-size: 4em;
     display:inline-block;
     transform: rotate(-5deg) skew(-10deg);
+    position: relative;
+    animation: flutua 1s infinite alternate ease-in-out;
 }
+@keyframes flutua{
+    from {
+        top: -5px;
+    }
+    to {
+        top: 5px;
+    }
+}
+.saudacao em:hover {
+    animation-play-state: paused;
+}
+
+
 .banner-twitter{
     position:absolute;  
     background-color: #3C1D3D;
@@ -71,7 +86,12 @@ body {
 
     */
     transform: translate(calc(0.707 * (3.5em - 100%) + 100%), calc(-1 * 0.707 * 3.5em)) rotate(45deg);
- }
+    animation: aparece .5s;
+    animation-delay: 2s;
+    animation-fill-mode: backwards;
+}
+
+
 .botao-index {
     font-size: 1.25em;
     background-color: #851944;
@@ -82,8 +102,18 @@ body {
     margin: 2em auto;
     display: block;
     text-align: center;
-    box-shadow: 0 0 .5em #000, inset 0 0 .5em #FFF;
+    text-decoration: none; 
+    box-shadow: 0 0 .5em #000, inset 0 0 .25em #FFF;
+    transition: color .5s, background-color .5s, box-shadow .5s;
 }
+
+.botao-index:hover, .botao-index:focus{
+    color: #FFF;
+    background-color: #C54974;
+    box-shadow: 0 0 1em #FA9;
+    transition: .5s;
+}
+
 .secao-inicio {
     padding: 2em;
 }
@@ -176,6 +206,7 @@ main {
     width: 100%;
     height: 100%;
     font-size: 400%;
+    
 }
 
 .palavra-home {
@@ -183,7 +214,16 @@ main {
     font-weight: bold;
     color: rgba(255, 127, 127, 0.5);
     position: absolute;
+    animation: aparece 2s;
 }
+
+@keyframes aparece{
+    from {
+        opacity: 0;
+        transform: scale(0.001);
+    }
+}
+
 .eficiencia {
     top: 50%;
     left: 60%;
