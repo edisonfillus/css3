@@ -5,6 +5,7 @@ html, body {
 body {
     perspective: 6px;
     perspective-origin: 50% 160px;
+    display: block;
 }
 .palavras-home, .titulo-principal {
     transform-style: preserve-3d;
@@ -144,14 +145,28 @@ body {
 .trabalhos ul {
     /*overflow: hidden;*/
     display: flex;
-    border: .5em solid black;
+    
 }
 .trabalhos li {
     flex: 1;
+    border: .5em solid black;
     /*float: left;*/
     /*width: 33.333%;*/
-
 }
+.trabalhos li:first-child{
+    transform: scale(1.2);
+    order: 2;
+}
+
+.trabalhos li:nth-child(2) {
+    order: 1;
+}
+
+.trabalhos li:last-child {
+    order: 3;
+}
+
+
 .trabalhos img {
     width: 100%;
     display: block;
